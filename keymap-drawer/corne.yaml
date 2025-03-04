@@ -42,8 +42,8 @@ layers:
   - SPACE
   - ENTER
   - LEFT GUI
-  - {t: SYMBOLS, h: toggle}
-  SYMBOLS:
+  - {t: SYMB, h: toggle}
+  SYMB:
   - ESCAPE
   - '1'
   - '2'
@@ -71,21 +71,21 @@ layers:
   - DELETE
   - {t: '~', h: '`'}
   - {t: '"', h: ''''}
-  - /
+  - '|'
   - <
   - '>'
   - +
   - '-'
-  - \
-  - '?'
-  - '|'
-  - {t: ▽, type: trans}
-  - LEFT SHIFT
-  - {t: BASE, h: toggle}
-  - '='
-  - {t: NAV, h: toggle}
   - {t: /, h: \}
   - {t: ;, h: ':'}
+  - '?'
+  - {t: ▽, type: trans}
+  - {t: BASE, h: toggle}
+  - '='
+  - LEFT SHIFT
+  - .
+  - ','
+  - {t: NAV, h: toggle}
   NAV:
   - Gui+Ctl+TAB
   - {t: ▽, type: trans}
@@ -123,12 +123,12 @@ layers:
   - Gui+RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: SYMBOLS, h: toggle}
+  - {t: SYMB, h: toggle}
   - LEFT GUI
-  - Ctl+Gui+SPACE
+  - LEFT SHIFT
+  - LCTRL
+  - LEFT ALT
   - {t: EXT, h: toggle}
-  - {t: ▽, type: trans}
   EXT:
   - {t: ▽, type: trans}
   - F1
