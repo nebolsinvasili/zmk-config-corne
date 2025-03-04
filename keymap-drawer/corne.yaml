@@ -6,7 +6,7 @@ layers:
   - W
   - E
   - R
-  - {t: '`', h: T}
+  - {t: T, h: '`'}
   - Y
   - U
   - I
@@ -37,12 +37,12 @@ layers:
   - .
   - /
   - LEFT ALT
-  - CAPSLOCK
   - {t: BASE, h: toggle}
-  - {t: ENTER, h: LEFT GUI}
-  - {t: SPACE, h: SYMBOLS}
-  - BACKSPACE
-  - LCTRL
+  - LEFT GUI
+  - SPACE
+  - ENTER
+  - LEFT GUI
+  - {t: SYMBOLS, h: toggle}
   SYMBOLS:
   - ESCAPE
   - '1'
@@ -83,7 +83,7 @@ layers:
   - LEFT SHIFT
   - {t: BASE, h: toggle}
   - '='
-  - {t: NAV, h: toggle, type: held}
+  - {t: NAV, h: toggle}
   - {t: /, h: \}
   - {t: ;, h: ':'}
   NAV:
@@ -169,7 +169,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: NAV, h: toggle}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: BASE, h: toggle}
   - {t: ▽, type: trans}
 combos:
