@@ -18,8 +18,8 @@ layers:
   - {t: S, h: LCTRL}
   - {t: D, h: LEFT SHIFT}
   - {t: F, h: TAB}
-  - G
-  - H
+  - {t: G, h: LEFT GUI}
+  - {t: H, h: LEFT GUI}
   - {t: J, h: TAB}
   - {t: K, h: LEFT SHIFT}
   - {t: L, h: LCTRL}
@@ -40,7 +40,7 @@ layers:
   - LCTRL
   - {t: BASE, h: toggle}
   - SPACE
-  - {t: ENTER, h: LEFT GUI}
+  - RETURN
   - {t: SYMB, h: toggle}
   - CAPSLOCK
   SYMB:
