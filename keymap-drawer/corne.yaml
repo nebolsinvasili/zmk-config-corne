@@ -83,8 +83,8 @@ layers:
   - LCTRL
   - {t: BASE, h: toggle}
   - LEFT SHIFT
-  - {t: ., h: LEFT GUI}
-  - {t: ',', h: NAV}
+  - LEFT GUI
+  - {t: NAV, h: toggle}
   - '='
   NAV:
   - Gui+Ctl+TAB
