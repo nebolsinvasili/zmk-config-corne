@@ -37,12 +37,12 @@ layers:
   - .
   - /
   - LEFT ALT
+  - LCTRL
   - {t: BASE, h: toggle}
-  - LEFT GUI
   - SPACE
-  - ENTER
-  - LEFT GUI
+  - {t: ENTER, h: LEFT GUI}
   - {t: SYMB, h: toggle}
+  - CAPSLOCK
   SYMB:
   - ESCAPE
   - '1'
@@ -80,12 +80,12 @@ layers:
   - {t: ;, h: ':'}
   - '?'
   - {t: ▽, type: trans}
+  - LCTRL
   - {t: BASE, h: toggle}
-  - {t: '=', h: LEFT GUI}
   - LEFT SHIFT
-  - .
-  - {t: ',', h: LEFT GUI}
-  - {t: NAV, h: toggle}
+  - {t: ., h: LEFT GUI}
+  - {t: ',', h: NAV}
+  - '='
   NAV:
   - Gui+Ctl+TAB
   - {t: ▽, type: trans}
@@ -123,12 +123,12 @@ layers:
   - Gui+RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: SYMB, h: toggle}
   - LEFT GUI
+  - {t: SYMB, h: toggle}
   - LEFT SHIFT
   - LCTRL
-  - LEFT ALT
   - {t: EXT, h: toggle}
+  - LEFT ALT
   EXT:
   - {t: ▽, type: trans}
   - F1
