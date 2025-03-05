@@ -142,10 +142,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-&kp ESC        &kp Q            &kp W         &kp E              &kp R       &mt GRAVE T    &kp Y                &kp U                &kp I              &kp O         &kp P               &kp LEFT_BRACKET
-&kp BACKSPACE  &HML LEFT_ALT A  &HML LCTRL S  &HML LEFT_SHIFT D  &HML TAB F  &kp G          &kp H                &HMR TAB J           &HMR LEFT_SHIFT K  &HMR LCTRL L  &HMR LEFT_ALT SEMI  &kp SINGLE_QUOTE
-&kp DELETE     &kp Z            &kp X         &kp C              &kp V       &kp B          &kp N                &mt RIGHT_BRACKET M  &kp COMMA          &kp DOT       &kp SLASH           &kp LEFT_ALT
-                                              &kp LCTRL          &to 0       &kp SPACE      &HMR LEFT_GUI ENTER  &to 1                &kp CAPSLOCK
+&kp ESC        &kp Q            &kp W         &kp E              &kp R       &mt GRAVE T        &kp Y            &kp U                &kp I              &kp O         &kp P               &kp LEFT_BRACKET
+&kp BACKSPACE  &HML LEFT_ALT A  &HML LCTRL S  &HML LEFT_SHIFT D  &HML TAB F  &HML LEFT_GUI G    &HMR LEFT_GUI H  &HMR TAB J           &HMR LEFT_SHIFT K  &HMR LCTRL L  &HMR LEFT_ALT SEMI  &kp SINGLE_QUOTE
+&kp DELETE     &kp Z            &kp X         &kp C              &kp V       &kp B              &kp N            &mt RIGHT_BRACKET M  &kp COMMA          &kp DOT       &kp SLASH           &kp LEFT_ALT
+                                              &kp LCTRL          &to 0       &kp SPACE          &kp RETURN       &to 1                &kp CAPSLOCK
             >;
         };
 
