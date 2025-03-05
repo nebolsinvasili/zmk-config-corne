@@ -85,7 +85,7 @@ layers:
   - LEFT SHIFT
   - LEFT GUI
   - {t: NAV, h: toggle}
-  - '='
+  - {t: '=', h: LEFT ALT}
   NAV:
   - Gui+Ctl+TAB
   - {t: ▽, type: trans}
@@ -123,10 +123,10 @@ layers:
   - Gui+RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT GUI
+  - LCTRL
   - {t: SYMB, h: toggle}
   - LEFT SHIFT
-  - LCTRL
+  - LEFT GUI
   - {t: EXT, h: toggle}
   - LEFT ALT
   EXT:
