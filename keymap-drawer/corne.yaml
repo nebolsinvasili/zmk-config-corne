@@ -136,11 +136,11 @@ layers:
   - ''
   - ''
   - ''
-  - REDO
-  - PASTE
-  - COPY
-  - CUT
-  - UNDO
+  - AC REDO
+  - AC PASTE
+  - AC COPY
+  - AC CUT
+  - AC UNDO
   - {t: ▽, type: trans}
   - ''
   - LEFT ALT
