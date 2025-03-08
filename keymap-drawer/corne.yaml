@@ -17,10 +17,10 @@ layers:
   - {t: A, h: LEFT ALT}
   - {t: S, h: LCTRL}
   - {t: D, h: LEFT SHIFT}
-  - {t: F, h: TAB}
-  - {t: G, h: LEFT GUI}
-  - {t: H, h: LEFT GUI}
-  - {t: J, h: TAB}
+  - {t: F, h: LEFT GUI}
+  - G
+  - H
+  - {t: J, h: LEFT GUI}
   - {t: K, h: LEFT SHIFT}
   - {t: L, h: LCTRL}
   - {t: ;, h: LEFT ALT}
@@ -37,141 +37,184 @@ layers:
   - .
   - /
   - LEFT ALT
-  - LCTRL
-  - {t: BASE, h: toggle}
-  - SPACE
-  - RETURN
-  - {t: SYMB, h: toggle}
-  - CAPSLOCK
-  SYMB:
   - ESCAPE
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
+  - {t: TAB, h: NAV}
+  - SPACE
+  - {t: ENTER, h: SYMB}
+  - {t: BACKSPACE, h: NUM}
+  - {t: DELETE, h: FUN}
+  NUM:
+  - ESCAPE
+  - '*'
   - '7'
   - '8'
   - '9'
-  - '0'
+  - '-'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - BACKSPACE
-  - '!'
-  - '@'
-  - '#'
+  - /
+  - '4'
+  - '5'
+  - '6'
+  - +
+  - ''
+  - LEFT GUI
+  - LEFT SHIFT
+  - LCTRL
+  - LEFT ALT
+  - {t: ▽, type: trans}
+  - DELETE
+  - ;
+  - '1'
+  - '2'
+  - '3'
+  - .
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - .
+  - '0'
+  - SPACE
+  - ''
+  - ''
+  - ''
+  SYMB:
+  - (
+  - )
+  - '&'
+  - '*'
+  - <
+  - '>'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '['
+  - ']'
   - $
   - '%'
   - ^
-  - '&'
-  - '*'
-  - (
-  - )
+  - '~'
   - {t: ▽, type: trans}
-  - DELETE
-  - {t: '~', h: '`'}
-  - {t: '"', h: ''''}
-  - '|'
-  - <
-  - '>'
-  - +
-  - '-'
-  - {t: /, h: \}
-  - {t: ;, h: ':'}
-  - '?'
-  - {t: ▽, type: trans}
+  - LEFT GUI
+  - LEFT SHIFT
   - LCTRL
-  - {t: BASE, h: toggle}
+  - LEFT ALT
+  - {t: ▽, type: trans}
+  - '{'
+  - '}'
+  - {t: '!', h: '?'}
+  - '@'
+  - '#'
+  - ''''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ;
+  - {t: /, h: \}
+  - _
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  NAV:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - REDO
+  - PASTE
+  - COPY
+  - CUT
+  - UNDO
+  - {t: ▽, type: trans}
+  - ''
+  - LEFT ALT
+  - LCTRL
   - LEFT SHIFT
   - LEFT GUI
-  - {t: NAV, h: toggle}
-  - {t: '=', h: LEFT ALT}
-  NAV:
-  - Gui+Ctl+TAB
-  - {t: ▽, type: trans}
-  - Gui+[
-  - Sft+TAB
-  - TAB
-  - Gui+]
-  - Alt+LEFT
-  - Alt+DOWN
-  - Alt+UP
-  - Alt+RIGHT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ESC
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - SCROLL DOWN
-  - SCROLL UP
-  - {t: ▽, type: trans}
+  - ''
   - LEFT
   - DOWN
   - UP
   - RIGHT
+  - ''
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - HOME
-  - PG DN
-  - PG UP
+  - PAGE DOWN
+  - PAGE UP
   - END
-  - Gui+LEFT
-  - Gui+DOWN
-  - Gui+UP
-  - Gui+RIGHT
+  - INSERT
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LCTRL
-  - {t: SYMB, h: toggle}
-  - LEFT SHIFT
-  - LEFT GUI
-  - {t: EXT, h: toggle}
-  - LEFT ALT
-  EXT:
-  - {t: ▽, type: trans}
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
+  - ''
+  - ''
+  - ''
+  - ENTER
+  - BACKSPACE
+  - DELETE
+  FUN:
+  - ''
+  - F12
   - F7
   - F8
   - F9
+  - PRINTSCREEN
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - ''
+  - F11
+  - F4
+  - F5
+  - F6
+  - SCROLLLOCK
+  - ''
+  - LEFT GUI
+  - LEFT SHIFT
+  - LCTRL
+  - LEFT ALT
+  - {t: ▽, type: trans}
+  - ''
   - F10
-  - F12
-  - PP
-  - PREV
-  - NEXT
-  - MUTE
-  - VOL DN
-  - VOL UP
-  - BRIGHTNESS DEC
-  - BRIGHTNESS INC
+  - F1
+  - F2
+  - F3
+  - PAUSE BREAK
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: NAV, h: toggle}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: BASE, h: toggle}
-  - {t: ▽, type: trans}
+  - MENU
+  - TAB
+  - SPACE
+  - ''
+  - ''
+  - ''
 combos:
 - p: [5, 6]
   k: Gui+ENTER
