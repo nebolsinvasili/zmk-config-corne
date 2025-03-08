@@ -151,10 +151,10 @@
         numeric {
             label = "NUM";
             bindings = <
-&kp ESCAPE     &kp ASTERISK   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS      &none  &none         &none           &none      &none         &trans
-&kp BACKSPACE  &kp SLASH      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS     &none  &kp LEFT_GUI  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &trans
-&kp DELETE     &kp SEMICOLON  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &none  &none         &none           &none      &none         &trans
-                                            &kp DOT       &kp NUMBER_0  &kp SPACE     &none  &none         &none
+&kp ESCAPE     &kp ASTERISK   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS     &none  &none         &none           &none      &none         &trans
+&kp BACKSPACE  &kp SLASH      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS    &none  &kp LEFT_GUI  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &trans
+&kp DELETE     &kp SEMICOLON  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL    &none  &none         &none           &none      &none         &trans
+                                            &kp DOT       &kp NUMBER_0  &kp SPACE    &none  &none         &none
             >;
         };
 
