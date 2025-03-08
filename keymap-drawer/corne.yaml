@@ -38,11 +38,11 @@ layers:
   - /
   - LEFT ALT
   - ESCAPE
-  - {t: TAB, h: NAV}
+  - {t: TAB, h: '&lt 3'}
   - SPACE
-  - {t: ENTER, h: SYMB}
-  - {t: BACKSPACE, h: NUM}
-  - {t: DELETE, h: FUN}
+  - {t: ENTER, h: '&lt 2'}
+  - {t: BACKSPACE, h: '&lt 1'}
+  - {t: DELETE, h: '&lt 4'}
   NUM:
   - ESCAPE
   - '*'
