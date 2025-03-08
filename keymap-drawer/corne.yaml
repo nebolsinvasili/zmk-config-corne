@@ -38,11 +38,11 @@ layers:
   - /
   - LEFT ALT
   - ESCAPE
-  - {t: TAB, h: '&lt 3'}
+  - {t: TAB, h: NAV}
   - SPACE
-  - {t: ENTER, h: '&lt 2'}
-  - {t: BACKSPACE, h: '&lt 1'}
-  - {t: DELETE, h: '&lt 4'}
+  - {t: ENTER, h: SYMB}
+  - {t: BACKSPACE, h: NUM}
+  - {t: DELETE, h: FUN}
   NUM:
   - ESCAPE
   - '*'
@@ -84,7 +84,7 @@ layers:
   - '0'
   - SPACE
   - ''
-  - ''
+  - {type: held}
   - ''
   SYMB:
   - (
@@ -126,7 +126,7 @@ layers:
   - ;
   - {t: /, h: \}
   - _
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   NAV:
@@ -167,7 +167,7 @@ layers:
   - INSERT
   - {t: ▽, type: trans}
   - ''
-  - ''
+  - {type: held}
   - ''
   - ENTER
   - BACKSPACE
@@ -214,7 +214,7 @@ layers:
   - SPACE
   - ''
   - ''
-  - ''
+  - {type: held}
 combos:
 - p: [5, 6]
   k: Gui+ENTER
