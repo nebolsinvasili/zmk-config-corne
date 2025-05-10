@@ -1,15 +1,15 @@
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 &led_strip {
-    chain-length = <0>;
-
-    // chain-length = <27>;
+    // chain-length = <0>;
+    chain-length = <27>;
     // 21 backlight + 6 glowlight
 };
 
 #define TAPPING_TERM 200
+
+
 
 / {
     behaviors {
@@ -26,103 +26,171 @@
             tapping-term-ms = <TAPPING_TERM>;
             bindings = <&kp LG(LC(Q))>, <&kp LG(LA(C_EJECT))>;
         };
+
+        HMR: HMR {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <6 18 30 31 19 7 8 20 32 33 21 9 10 22 34 35 23 11 39 40 41 36 37 38>;
+            hold-trigger-on-release;
+        };
+
+        HML: HML {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HML";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <39 40 41 36 37 38 0 12 24 25 13 1 2 14 26 27 15 3 4 16 28 29 17 5>;
+            hold-trigger-on-release;
+        };
+
+        HMLay: HMLay {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMLAY";
+            bindings = <&lt>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <36 37 38 39 40 41>;
+            hold-trigger-on-release;
+        };
     };
 
     combos {
         compatible = "zmk,combos";
 
-        Clear_BLE_Profile {
-            bindings = <&bt BT_CLR>;
-            key-positions = <0 38 5>;
-        };
-
-        Space {
-            bindings = <&kp SPACE>;
-            key-positions = <29 28>;
-        };
-
-        Enter {
-            bindings = <&kp ENTER>;
-            key-positions = <17 16>;
-        };
-
         Capslock {
-            bindings = <&kp CLCK>;
+            bindings = <&kp LG(ENTER)>;
             key-positions = <5 6>;
         };
 
-        gfg {
-            bindings = <&kp EQUAL>;
-            key-positions = <0 1>;
-        };
-    };
-
-    macros {
-        git_status: git_status {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp G &kp I &kp T &kp SPACE &kp S &kp T &kp A &kp T &kp U &kp S>;
-            label = "GIT_STATUS";
+        plus {
+            bindings = <&kp PLUS>;
+            key-positions = <2 3>;
         };
 
-        git_commit_all: git_commit_all {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp G &kp I &kp T &kp SPACE &kp C &kp O &kp M &kp M &kp I &kp T &kp SPACE &kp MINUS &kp A &kp MINUS &kp M &kp SPACE &kp DQT &kp DQT &kp LEFT_ARROW>;
-            label = "GIT_COMMIT";
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <3 4>;
+        };
+
+        left_parenthesis {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <4 5>;
+        };
+
+        left_bracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <16 17>;
+        };
+
+        left_brace {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <28 29>;
+        };
+
+        right_parenthesis {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <6 7>;
+        };
+
+        right_bracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <18 19>;
+        };
+
+        right_brace {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <30 31>;
+        };
+
+        underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <7 8>;
+        };
+
+        pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <8 9>;
+        };
+
+        quote {
+            bindings = <&kp SQT>;
+            key-positions = <15 16>;
+        };
+
+        double_quotes {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <19 20>;
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        base_layer {
+        base {
             label = "BASE";
             bindings = <
-&mt LC(LS(LALT)) TAB  &kp Q  &kp W  &kp E         &kp R  &kp T       &kp Y      &kp U  &kp I      &kp O    &kp P      &kp MINUS
-&kp LSHIFT            &kp A  &kp S  &kp D         &kp F  &kp G       &kp H      &kp J  &kp K      &kp L    &kp SEMI   &kp SINGLE_QUOTE
-&kp LEFT_CONTROL      &kp Z  &kp X  &kp C         &kp V  &kp B       &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp LEFT_ALT
-                                    &kp LEFT_GUI  &mo 2  &kp BSPC    &kp SPACE  &mo 1  &kp ENTER
+&kp ESC        &kp Q            &kp W         &kp E              &kp R            &mt GRAVE T    &kp Y        &kp U                &kp I              &kp O         &kp P               &kp LEFT_BRACKET
+&kp BACKSPACE  &HML LEFT_ALT A  &HML LCTRL S  &HML LEFT_SHIFT D  &HML LEFT_GUI F  &kp G          &kp H        &HMR LEFT_GUI J      &HMR LEFT_SHIFT K  &HMR LCTRL L  &HMR LEFT_ALT SEMI  &kp SINGLE_QUOTE
+&kp DELETE     &kp Z            &kp X         &kp C              &kp V            &kp B          &kp N        &mt RIGHT_BRACKET M  &kp COMMA          &kp DOT       &kp SLASH           &kp LEFT_ALT
+                                              &kp ESCAPE         &lt 3 TAB        &kp SPACE      &lt 2 ENTER  &lt 1 BACKSPACE      &lt 4 DELETE
             >;
         };
 
-        symbols_layer {
-            label = "SYMBOLS";
+        numeric {
+            label = "NUM";
             bindings = <
-&trans   &kp N1     &kp N2     &kp N3    &kp N4     &kp N5       &kp N6            &kp N7             &kp N8          &kp N9           &kp N0         &trans
-&kp ESC  &kp EXCL   &kp AT     &kp HASH  &kp DLLR   &kp PRCNT    &kp CARET         &kp AMPS           &kp ASTERISK    &kp LPAR         &kp RPAR       &trans
-&trans   &kp GRAVE  &kp TILDE  &kp PIPE  &kp EQUAL  &kp PLUS     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH  &trans
-                               &trans    &trans     &trans       &trans            &trans             &trans
+&kp ESCAPE     &kp ASTERISK   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS      &none  &none         &none           &none      &none         &trans
+&kp BACKSPACE  &kp SLASH      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS     &none  &kp LEFT_GUI  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &trans
+&kp DELETE     &kp SEMICOLON  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &none  &none         &none           &none      &none         &trans
+                                            &kp DOT       &kp NUMBER_0  &kp EQUAL     &none  &none         &none
             >;
         };
 
-        nav_layer {
+        symbolic {
+            bindings = <
+&kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND              &kp ASTERISK   &kp LESS_THAN                &kp GREATER_THAN    &trans  &trans        &trans          &trans     &trans        &trans
+&kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR                 &kp PERCENT    &kp CARET                    &kp TILDE           &trans  &kp LEFT_GUI  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &trans
+&kp LEFT_BRACE        &kp RIGHT_BRACE        &HML QUESTION EXCLAMATION  &kp AT_SIGN    &kp HASH                     &kp SQT             &trans  &trans        &trans          &trans     &trans        &trans
+                                                                        &kp SEMICOLON  &HML NON_US_BACKSLASH SLASH  &kp UNDERSCORE      &trans  &trans        &trans
+            >;
+
+            label = "SYMB";
+        };
+
+        navigation {
+            bindings = <
+&none  &none         &none      &none           &none         &none    &kp C_AC_REDO  &kp C_AC_PASTE  &kp C_AC_COPY  &kp C_AC_CUT  &kp C_AC_UNDO  &trans
+&none  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_GUI  &none    &kp LEFT       &kp DOWN        &kp UP         &kp RIGHT     &none          &trans
+&none  &none         &none      &none           &none         &none    &kp HOME       &kp PAGE_DOWN   &kp PAGE_UP    &kp END       &kp INSERT     &trans
+                                &none           &none         &none    &kp ENTER      &kp BACKSPACE   &kp DELETE
+            >;
+
             label = "NAV";
-            bindings = <
-&kp LG(LC(TAB))  &trans  &kp LG(LEFT_BRACKET)  &kp LS(TAB)        &kp TAB          &kp LG(RIGHT_BRACKET)    &kp LA(LEFT)       &kp LA(DOWN)  &kp LA(UP)  &kp LA(RIGHT)  &trans  &trans
-&kp ESC          &trans  &trans                &kp K_SCROLL_DOWN  &kp K_SCROLL_UP  &trans                   &kp LEFT           &kp DOWN      &kp UP      &kp RIGHT      &trans  &trans
-&trans           &trans  &kp HOME              &kp PG_DN          &kp PG_UP        &kp END                  &kp LG(LEFT)       &kp LG(DOWN)  &kp LG(UP)  &kp LG(RIGHT)  &trans  &trans
-                                               &trans             &trans           &trans                   &kp LC(LG(SPACE))  &trans        &trans
-            >;
         };
 
-        extended_layer {
-            label = "EXT";
+        function {
+            label = "FUN";
             bindings = <
-&trans    &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6                &kp F7                &kp F8  &kp F9  &kp F10  &kp F12
-&kp K_PP  &kp K_PREV    &kp K_NEXT    &kp K_MUTE    &kp C_VOL_DN  &kp C_VOL_UP    &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans  &trans  &trans   &trans
-&trans    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans                &trans                &trans  &trans  &trans   &trans
-                                      &trans        &trans        &trans          &trans                &trans                &trans
+&none  &kp F12  &kp F7  &kp F8      &kp F9   &kp PRINTSCREEN    &none  &none         &none           &none      &none         &trans
+&none  &kp F11  &kp F4  &kp F5      &kp F6   &kp SCROLLLOCK     &none  &kp LEFT_GUI  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &trans
+&none  &kp F10  &kp F1  &kp F2      &kp F3   &kp PAUSE_BREAK    &none  &none         &none           &none      &none         &trans
+                        &kp C_MENU  &kp TAB  &kp SPACE          &none  &none         &none
             >;
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        Activate_EXT {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
