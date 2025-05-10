@@ -1,185 +1,244 @@
 layout: {zmk_keyboard: corne}
 layers:
   BASE:
-  - {t: TAB, h: Ctl+Sft+LALT}
+  - ESC
   - Q
   - W
   - E
   - R
-  - T
+  - {t: T, h: '`'}
   - Y
   - U
   - I
   - O
   - P
-  - '-'
-  - LSHIFT
-  - A
-  - S
-  - D
-  - F
+  - '['
+  - BACKSPACE
+  - {t: A, h: LEFT ALT}
+  - {t: S, h: LCTRL}
+  - {t: D, h: LEFT SHIFT}
+  - {t: F, h: LEFT GUI}
   - G
   - H
-  - J
-  - K
-  - L
-  - ;
+  - {t: J, h: LEFT GUI}
+  - {t: K, h: LEFT SHIFT}
+  - {t: L, h: LCTRL}
+  - {t: ;, h: LEFT ALT}
   - ''''
-  - LEFT CONTROL
+  - DELETE
   - Z
   - X
   - C
   - V
   - B
   - N
-  - M
+  - {t: M, h: ']'}
   - ','
   - .
   - /
   - LEFT ALT
-  - LEFT GUI
-  - NAV
-  - BSPC
+  - ESCAPE
+  - {t: TAB, h: NAV}
   - SPACE
-  - SYMBOLS
-  - ENTER
-  SYMBOLS:
-  - {t: ▽, type: trans}
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
+  - {t: ENTER, h: SYMB}
+  - {t: BACKSPACE, h: NUM}
+  - {t: DELETE, h: FUN}
+  NUM:
+  - ESCAPE
+  - '*'
   - '7'
   - '8'
   - '9'
-  - '0'
+  - +
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: ▽, type: trans}
-  - ESC
-  - '!'
-  - '@'
-  - '#'
+  - BACKSPACE
+  - /
+  - '4'
+  - '5'
+  - '6'
+  - '-'
+  - ''
+  - LEFT GUI
+  - LEFT SHIFT
+  - LCTRL
+  - LEFT ALT
+  - {t: ▽, type: trans}
+  - DELETE
+  - ;
+  - '1'
+  - '2'
+  - '3'
+  - .
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - .
+  - '0'
+  - '='
+  - ''
+  - {type: held}
+  - ''
+  SYMB:
+  - (
+  - )
+  - '&'
+  - '*'
+  - <
+  - '>'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '['
+  - ']'
   - $
   - '%'
   - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '`'
   - '~'
-  - '|'
-  - '='
-  - +
-  - '['
-  - ']'
+  - {t: ▽, type: trans}
+  - LEFT GUI
+  - LEFT SHIFT
+  - LCTRL
+  - LEFT ALT
+  - {t: ▽, type: trans}
   - '{'
   - '}'
-  - \
+  - {t: '!', h: '?'}
+  - '@'
+  - '#'
+  - ''''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ;
+  - {t: /, h: \}
+  - _
   - {type: held}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   NAV:
-  - Gui+Ctl+TAB
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - AC REDO
+  - AC PASTE
+  - AC COPY
+  - AC CUT
+  - AC UNDO
   - {t: ▽, type: trans}
-  - Gui+[
-  - Sft+TAB
-  - TAB
-  - Gui+]
-  - Alt+LEFT
-  - Alt+DOWN
-  - Alt+UP
-  - Alt+RIGHT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ESC
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - SCROLL DOWN
-  - SCROLL UP
-  - {t: ▽, type: trans}
+  - ''
+  - LEFT ALT
+  - LCTRL
+  - LEFT SHIFT
+  - LEFT GUI
+  - ''
   - LEFT
   - DOWN
   - UP
   - RIGHT
+  - ''
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - HOME
-  - PG DN
-  - PG UP
+  - PAGE DOWN
+  - PAGE UP
   - END
-  - Gui+LEFT
-  - Gui+DOWN
-  - Gui+UP
-  - Gui+RIGHT
+  - INSERT
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
   - {type: held}
-  - {t: ▽, type: trans}
-  - Ctl+Gui+SPACE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  EXT:
-  - {t: ▽, type: trans}
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
+  - ''
+  - ENTER
+  - BACKSPACE
+  - DELETE
+  FUN:
+  - ''
+  - F12
   - F7
   - F8
   - F9
+  - PRINTSCREEN
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - ''
+  - F11
+  - F4
+  - F5
+  - F6
+  - SCROLLLOCK
+  - ''
+  - LEFT GUI
+  - LEFT SHIFT
+  - LCTRL
+  - LEFT ALT
+  - {t: ▽, type: trans}
+  - ''
   - F10
-  - F12
-  - PP
-  - PREV
-  - NEXT
-  - MUTE
-  - VOL DN
-  - VOL UP
-  - BRIGHTNESS DEC
-  - BRIGHTNESS INC
+  - F1
+  - F2
+  - F3
+  - PAUSE BREAK
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - MENU
+  - TAB
+  - SPACE
+  - ''
+  - ''
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
 combos:
-- p: [0, 38, 5]
-  k: BT CLR
-- p: [29, 28]
-  k: SPACE
-- p: [17, 16]
-  k: ENTER
 - p: [5, 6]
-  k: CLCK
-- p: [0, 1]
-  k: '='
+  k: Gui+ENTER
+- p: [2, 3]
+  k: +
+- p: [3, 4]
+  k: '-'
+- p: [4, 5]
+  k: (
+- p: [16, 17]
+  k: '['
+- p: [28, 29]
+  k: '{'
+- p: [6, 7]
+  k: )
+- p: [18, 19]
+  k: ']'
+- p: [30, 31]
+  k: '}'
+- p: [7, 8]
+  k: _
+- p: [8, 9]
+  k: '|'
+- p: [15, 16]
+  k: ''''
+- p: [19, 20]
+  k: '"'
