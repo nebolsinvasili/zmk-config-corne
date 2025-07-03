@@ -37,12 +37,12 @@ layers:
   - .
   - /
   - LEFT ALT
-  - ESCAPE
+  - {t: ESCAPE, h: MOUSE}
   - {t: TAB, h: NAV}
   - SPACE
   - {t: ENTER, h: SYMB}
   - {t: BACKSPACE, h: NUM}
-  - {t: DELETE, h: FUN}
+  - {t: DELETE, h: FUNC}
   NUM:
   - ESCAPE
   - '*'
@@ -172,7 +172,7 @@ layers:
   - ENTER
   - BACKSPACE
   - DELETE
-  FUN:
+  FUNC:
   - ''
   - F12
   - F7
@@ -215,6 +215,49 @@ layers:
   - ''
   - ''
   - {type: held}
+  MOUSE:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&msc SCRL_RIGHT'
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_LEFT'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mmv MOVE_RIGHT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_LEFT'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp LCLK'
+  - '&mkp MCLK'
+  - '&mkp RCLK'
 combos:
 - p: [5, 6]
   k: Gui+ENTER
