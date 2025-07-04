@@ -12,7 +12,6 @@
 
     // 21 backlight + 6 glowlight
 };
-&rgb_ug RGB_COLOR_HSB(0, 0, 100)
 
 #define TAPPING_TERM 200
 
