@@ -36,7 +36,7 @@ layers:
   - ','
   - .
   - /
-  - LEFT ALT
+  - {t: LIGHTING, h: toggle}
   - {t: ESCAPE, h: MOUSE}
   - {t: TAB, h: NAV}
   - SPACE
