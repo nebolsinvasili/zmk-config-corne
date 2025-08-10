@@ -149,7 +149,7 @@
             bindings = <
 &kp ESC        &kp Q            &kp W         &kp E              &kp R            &mt GRAVE T    &kp Y        &kp U                &kp I              &kp O         &kp P               &kp LEFT_BRACKET
 &kp BACKSPACE  &HML LEFT_ALT A  &HML LCTRL S  &HML LEFT_SHIFT D  &HML LEFT_GUI F  &kp G          &kp H        &HMR LEFT_GUI J      &HMR LEFT_SHIFT K  &HMR LCTRL L  &HMR LEFT_ALT SEMI  &kp SINGLE_QUOTE
-&kp DELETE     &kp Z            &kp X         &kp C              &kp V            &kp B          &kp N        &mt RIGHT_BRACKET M  &kp COMMA          &kp DOT       &kp SLASH           &kp LEFT_ALT
+&kp DELETE     &kp Z            &kp X         &kp C              &kp V            &kp B          &kp N        &mt RIGHT_BRACKET M  &kp COMMA          &kp DOT       &kp SLASH           &to 6
                                               &lt 5 ESCAPE       &lt 3 TAB        &kp SPACE      &lt 2 ENTER  &lt 1 BACKSPACE      &lt 4 DELETE
             >;
         };
