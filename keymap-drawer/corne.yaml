@@ -40,8 +40,8 @@ layers:
   - {t: ESCAPE, h: MOUSE}
   - {t: TAB, h: NAV}
   - SPACE
-  - {t: ENTER, h: SYMB}
-  - {t: BACKSPACE, h: NUM}
+  - {t: ENTER, h: NUM}
+  - {t: BACKSPACE, h: SYMB}
   - {t: DELETE, h: FUNC}
   NUM:
   - ESCAPE
@@ -83,8 +83,8 @@ layers:
   - '0'
   - .
   - '='
-  - ''
   - {type: held}
+  - ''
   - ''
   SYMB:
   - (
@@ -126,8 +126,8 @@ layers:
   - _
   - {t: /, h: \}
   - ;
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   NAV:
   - ''
@@ -173,7 +173,7 @@ layers:
   - BACKSPACE
   - DELETE
   FUNC:
-  - ''
+  - {t: ▽, type: trans}
   - F12
   - F7
   - F8
@@ -185,7 +185,7 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - ''
+  - {t: ▽, type: trans}
   - F11
   - F4
   - F5
@@ -197,7 +197,7 @@ layers:
   - LCTRL
   - LEFT ALT
   - {t: ▽, type: trans}
-  - ''
+  - {t: ▽, type: trans}
   - F10
   - F1
   - F2
