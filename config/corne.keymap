@@ -75,21 +75,6 @@
     combos {
         compatible = "zmk,combos";
 
-        Capslock {
-            bindings = <&kp LG(ENTER)>;
-            key-positions = <5 6>;
-        };
-
-        plus {
-            bindings = <&kp PLUS>;
-            key-positions = <2 3>;
-        };
-
-        minus {
-            bindings = <&kp MINUS>;
-            key-positions = <3 4>;
-        };
-
         left_parenthesis {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <4 5>;
@@ -122,22 +107,32 @@
 
         underscore {
             bindings = <&kp UNDERSCORE>;
-            key-positions = <7 8>;
+            key-positions = <31 32>;
         };
 
         pipe {
             bindings = <&kp PIPE>;
-            key-positions = <8 9>;
+            key-positions = <8 20>;
         };
 
         quote {
             bindings = <&kp SQT>;
-            key-positions = <15 16>;
+            key-positions = <8 3>;
         };
 
         double_quotes {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <19 20>;
+            key-positions = <3 8 2 9>;
+        };
+
+        L_THAN {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <5 17>;
+        };
+
+        R_THAN {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <6 18>;
         };
     };
 
@@ -147,29 +142,29 @@
         base {
             label = "BASE";
             bindings = <
-&kp ESC        &kp Q            &kp W         &kp E              &kp R            &mt GRAVE T    &kp Y        &kp U                &kp I              &kp O         &kp P               &kp LEFT_BRACKET
-&kp BACKSPACE  &HML LEFT_ALT A  &HML LCTRL S  &HML LEFT_SHIFT D  &HML LEFT_GUI F  &kp G          &kp H        &HMR LEFT_GUI J      &HMR LEFT_SHIFT K  &HMR LCTRL L  &HMR LEFT_ALT SEMI  &kp SINGLE_QUOTE
-&kp DELETE     &kp Z            &kp X         &kp C              &kp V            &kp B          &kp N        &mt RIGHT_BRACKET M  &kp COMMA          &kp DOT       &kp SLASH           &to 6
-                                              &lt 5 ESCAPE       &lt 3 TAB        &kp SPACE      &lt 2 ENTER  &lt 1 BACKSPACE      &lt 4 DELETE
+&trans  &kp Q            &kp W         &kp E              &kp R            &mt GRAVE T    &kp Y        &kp U                &kp I              &kp O         &kp P               &kp LEFT_BRACKET
+&trans  &HML LEFT_ALT A  &HML LCTRL S  &HML LEFT_SHIFT D  &HML LEFT_GUI F  &kp G          &kp H        &HMR LEFT_GUI J      &HMR LEFT_SHIFT K  &HMR LCTRL L  &HMR LEFT_ALT SEMI  &kp SINGLE_QUOTE
+&trans  &kp Z            &kp X         &kp C              &kp V            &kp B          &kp N        &mt RIGHT_BRACKET M  &kp COMMA          &kp DOT       &kp SLASH           &to 6
+                                       &lt 5 ESCAPE       &lt 3 TAB        &kp SPACE      &lt 2 ENTER  &lt 1 BACKSPACE      &lt 4 DELETE
             >;
         };
 
         numeric {
             label = "NUM";
             bindings = <
-&kp ESCAPE     &kp ASTERISK   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS      &none  &none         &none           &none      &none         &trans
-&kp BACKSPACE  &kp SLASH      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS     &none  &kp LEFT_GUI  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &trans
-&kp DELETE     &kp SEMICOLON  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &none  &none         &none           &none      &none         &trans
-                                            &kp DOT       &kp NUMBER_0  &kp EQUAL     &none  &none         &none
+&kp ESCAPE     &kp ASTERISK   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS    &none  &none         &none           &none      &none         &trans
+&kp BACKSPACE  &kp SLASH      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS     &none  &kp LEFT_GUI  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &trans
+&kp DELETE     &kp SEMICOLON  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA    &none  &none         &none           &none      &none         &trans
+                                            &kp NUMBER_0  &kp DOT       &kp EQUAL    &none  &none         &none
             >;
         };
 
         symbolic {
             bindings = <
-&kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND              &kp ASTERISK   &kp LESS_THAN                &kp GREATER_THAN    &trans  &trans        &trans          &trans     &trans        &trans
-&kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR                 &kp PERCENT    &kp CARET                    &kp TILDE           &trans  &kp LEFT_GUI  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &trans
-&kp LEFT_BRACE        &kp RIGHT_BRACE        &HML QUESTION EXCLAMATION  &kp AT_SIGN    &kp HASH                     &kp SQT             &trans  &trans        &trans          &trans     &trans        &trans
-                                                                        &kp SEMICOLON  &HML NON_US_BACKSLASH SLASH  &kp UNDERSCORE      &trans  &trans        &trans
+&kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND              &kp ASTERISK    &kp LESS_THAN                &kp GREATER_THAN    &trans  &trans        &trans          &trans     &trans        &trans
+&kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR                 &kp PERCENT     &kp CARET                    &kp TILDE           &trans  &kp LEFT_GUI  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &trans
+&kp LEFT_BRACE        &kp RIGHT_BRACE        &HML QUESTION EXCLAMATION  &kp AT_SIGN     &kp HASH                     &kp SQT             &trans  &trans        &trans          &trans     &trans        &trans
+                                                                        &kp UNDERSCORE  &HML NON_US_BACKSLASH SLASH  &kp SEMICOLON       &trans  &trans        &trans
             >;
 
             label = "SYMB";
