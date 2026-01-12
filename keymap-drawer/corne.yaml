@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   BASE:
-  - ESC
+  - {t: ▽, type: trans}
   - Q
   - W
   - E
@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - '['
-  - BACKSPACE
+  - {t: ▽, type: trans}
   - {t: A, h: LEFT ALT}
   - {t: S, h: LCTRL}
   - {t: D, h: LEFT SHIFT}
@@ -25,7 +25,7 @@ layers:
   - {t: L, h: LCTRL}
   - {t: ;, h: LEFT ALT}
   - ''''
-  - DELETE
+  - {t: ▽, type: trans}
   - Z
   - X
   - C
@@ -49,7 +49,7 @@ layers:
   - '7'
   - '8'
   - '9'
-  - +
+  - '-'
   - ''
   - ''
   - ''
@@ -61,7 +61,7 @@ layers:
   - '4'
   - '5'
   - '6'
-  - '-'
+  - +
   - ''
   - LEFT GUI
   - LEFT SHIFT
@@ -73,15 +73,15 @@ layers:
   - '1'
   - '2'
   - '3'
-  - .
+  - ','
   - ''
   - ''
   - ''
   - ''
   - ''
   - {t: ▽, type: trans}
-  - .
   - '0'
+  - .
   - '='
   - ''
   - {type: held}
@@ -123,9 +123,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ;
-  - {t: /, h: \}
   - _
+  - {t: /, h: \}
+  - ;
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -302,12 +302,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [5, 6]
-  k: Gui+ENTER
-- p: [2, 3]
-  k: +
-- p: [3, 4]
-  k: '-'
 - p: [4, 5]
   k: (
 - p: [16, 17]
@@ -320,11 +314,15 @@ combos:
   k: ']'
 - p: [30, 31]
   k: '}'
-- p: [7, 8]
+- p: [31, 32]
   k: _
-- p: [8, 9]
+- p: [8, 20]
   k: '|'
-- p: [15, 16]
+- p: [8, 3]
   k: ''''
-- p: [19, 20]
+- p: [3, 8, 2, 9]
   k: '"'
+- p: [5, 17]
+  k: <
+- p: [6, 18]
+  k: '>'
