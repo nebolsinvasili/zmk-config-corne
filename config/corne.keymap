@@ -145,7 +145,7 @@
 &trans  &kp Q            &kp W         &kp E              &kp R            &mt GRAVE T    &kp Y        &kp U                &kp I              &kp O         &kp P               &kp LEFT_BRACKET
 &trans  &HML LEFT_ALT A  &HML LCTRL S  &HML LEFT_SHIFT D  &HML LEFT_GUI F  &kp G          &kp H        &HMR LEFT_GUI J      &HMR LEFT_SHIFT K  &HMR LCTRL L  &HMR LEFT_ALT SEMI  &kp SINGLE_QUOTE
 &trans  &kp Z            &kp X         &kp C              &kp V            &kp B          &kp N        &mt RIGHT_BRACKET M  &kp COMMA          &kp DOT       &kp SLASH           &to 6
-                                       &lt 5 ESCAPE       &lt 3 TAB        &kp SPACE      &lt 2 ENTER  &lt 1 BACKSPACE      &lt 4 DELETE
+                                       &lt 5 ESCAPE       &lt 3 TAB        &kp SPACE      &lt 1 ENTER  &lt 2 BACKSPACE      &lt 4 DELETE
             >;
         };
 
@@ -184,10 +184,10 @@
         function {
             label = "FUNC";
             bindings = <
-&none  &kp F12  &kp F7  &kp F8      &kp F9   &kp PRINTSCREEN    &none  &none         &none           &none      &none         &trans
-&none  &kp F11  &kp F4  &kp F5      &kp F6   &kp SCROLLLOCK     &none  &kp LEFT_GUI  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &trans
-&none  &kp F10  &kp F1  &kp F2      &kp F3   &kp PAUSE_BREAK    &none  &none         &none           &none      &none         &trans
-                        &kp C_MENU  &kp TAB  &kp SPACE          &none  &none         &none
+&trans  &kp F12  &kp F7  &kp F8      &kp F9   &kp PRINTSCREEN    &none  &none         &none           &none      &none         &trans
+&trans  &kp F11  &kp F4  &kp F5      &kp F6   &kp SCROLLLOCK     &none  &kp LEFT_GUI  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &trans
+&trans  &kp F10  &kp F1  &kp F2      &kp F3   &kp PAUSE_BREAK    &none  &none         &none           &none      &none         &trans
+                         &kp C_MENU  &kp TAB  &kp SPACE          &none  &none         &none
             >;
         };
 
